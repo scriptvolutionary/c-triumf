@@ -112,7 +112,7 @@ export const Header = () => {
 							src='/logo.svg'
 						/>
 					</Link>
-					<div className='xs:hidden lg:flex items-center justify-between'>
+					<div className='xs:hidden lg:flex items-center justify-between gap-8'>
 						{HeaderLinks.map(l => (
 							<div className='dropdown dropdown-hover' key={l.id}>
 								<Link href={l.path}>
@@ -143,7 +143,7 @@ export const Header = () => {
 					<div className='xs:block lg:hidden'>
 						<div className='dropdown dropdown-end'>
 							<label
-								className='btn btn-secondary glass shadow-none bg-secondary hover:btn-secondary text-base font-semibold rounded-md'
+								className='btn btn-secondary lg:glass shadow-none bg-secondary hover:btn-secondary text-base font-semibold rounded-md'
 								tabIndex={0}
 							>
 								<FaBars size={20} />
@@ -154,36 +154,11 @@ export const Header = () => {
 							>
 								{HeaderLinks.map(l => (
 									<li key={l.id}>
-										{l.content ? (
-											<div
-												className='collapse p-0 bg-base-100 rounded-md flex flex-col'
-												tabIndex={0}
-											>
-												<a className='btn btn-ghost rounded-md normal-case btn-block glass shadow-none hover:btn-secondary justify-start text-base font-semibold'>
-													{l.title}
-												</a>
-												<div className='collapse-content p-0 m-0'>
-													{l.content?.map(c => (
-														<Link
-															href={
-																c.path && c.path
-															}
-															key={c.id}
-														>
-															<a className='btn btn-ghost rounded-md normal-case btn-block glass shadow-none hover:btn-secondary justify-start text-base font-semibold'>
-																{c.title}
-															</a>
-														</Link>
-													))}
-												</div>
-											</div>
-										) : (
-											<Link href={l.path}>
-												<a className='btn btn-ghost rounded-md normal-case btn-block glass shadow-none hover:btn-secondary justify-start text-base font-semibold'>
-													{l.title}
-												</a>
-											</Link>
-										)}
+										<Link href={l.path}>
+											<a className='btn btn-ghost rounded-md normal-case btn-block lg:glass lg:shadow-none hover:btn-secondary justify-start text-base font-semibold'>
+												{l.title}
+											</a>
+										</Link>
 									</li>
 								))}
 							</ul>

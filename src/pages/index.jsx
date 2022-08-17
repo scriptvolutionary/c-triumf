@@ -145,11 +145,11 @@ function Home() {
 			</Head>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='py-8 xs:py-4'>
+					<div className='lg:py-8 xs:py-4'>
 						<div className='grid lg:grid-cols-3 xs:grid-cols-1 xs:gap-4 lg:gap-8'>
 							{UsefulLinks.map(l => (
 								<Link href={l.path} key={l.id}>
-									<a className='btn btn-ghost btn-block lg:text-base lg:font-semibold glass lg:h-24 hover:btn-secondary hover:shadow-xl hover:translate-x-1 hover:-translate-y-1 rounded-md'>
+									<a className='btn btn-ghost btn-block lg:text-base lg:font-semibold glass lg:h-24 lg:hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md'>
 										{l.title}
 									</a>
 								</Link>
@@ -160,18 +160,18 @@ function Home() {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24 xs:pb-12'>
+					<div className='lg:pb-24 xs:pb-12'>
 						<Slider {...SliderOptions}>
 							{SliderContent.map(s => (
 								<div key={s.id}>
 									<div className='card h-[520px] lg:card-side rounded-md glass'>
-										<figure className='lg:w-2/6'>
+										<figure className='lg:w-1/3 xs:w-full'>
 											<img
-												className='lg:h-[520px] w-full h-full xs:max-h-56'
+												className='lg:w-full xs:h-full'
 												src={s.image}
 											/>
 										</figure>
-										<div className='card-body gap-4 lg:w-4/6 xs:pl-4 xs:pt-4 pr-4 pb-4'>
+										<div className='card-body gap-4 lg:w-2/3 xs:w-full xs:pl-4 xs:pt-4 pr-4 pb-4'>
 											<h1 className='card-title lg:text-3xl xs:text-xl font-semibold'>
 												{s.title}
 											</h1>
@@ -180,7 +180,7 @@ function Home() {
 											</p>
 											<div className='card-actions gap-4 xs:gap-4 justify-end'>
 												<Link href={s.pricePath}>
-													<a className='btn btn-ghost glass hover:btn-secondary text-base font-semibold gap-1 rounded-md hover:translate-x-1 hover:-translate-y-1 hover:shadow-xl ease-in-out transition-all transform-gpu'>
+													<a className='btn btn-ghost glass lg:hover:btn-secondary lg:text-base lg:font-semibold gap-1 rounded-md lg:hover:translate-x-1 lg:hover:-translate-y-1 lg:hover:shadow-xl ease-in-out transition-all transform-gpu'>
 														От {s.price}
 														<FaRubleSign
 															size={14}
@@ -188,7 +188,7 @@ function Home() {
 													</a>
 												</Link>
 												<Link href={s.path}>
-													<a className='btn btn-secondary glass bg-secondary shadow-none hover:btn-secondary text-base font-semibold gap-2 rounded-md hover:translate-x-1 hover:-translate-y-1 hover:shadow-xl ease-in-out transition-all transform-gpu'>
+													<a className='btn btn-secondary lg:glass lg:bg-secondary xs:bg-secondary lg:shadow-none lg:hover:btn-secondary lg:text-base lg:font-semibold gap-2 rounded-md lg:hover:translate-x-1 lg:hover:-translate-y-1 lg:hover:shadow-xl ease-in-out transition-all transform-gpu'>
 														Об услуге
 														<FaLongArrowAltRight
 															size={18}
@@ -206,15 +206,15 @@ function Home() {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24 xs:pb-12'>
-						<div className='flex flex-col gap-16 xs:gap-8'>
-							<h2 className='text-4xl xs:text-3xl font-bold'>
+					<div className='lg:pb-24 xs:pb-12'>
+						<div className='flex flex-col lg:gap-16 xs:gap-8'>
+							<h2 className='lg:text-4xl xs:text-3xl font-bold'>
 								Триумф в цифрах
 							</h2>
-							<div className='grid grid-cols-3 xs:grid-cols-1 xs:gap-4 gap-8'>
+							<div className='grid lg:grid-cols-3 xs:grid-cols-1 xs:gap-4 lg:gap-8'>
 								{StatContent.map(s => (
 									<div
-										className='w-full glass text-base-content xs:p-4 p-8 rounded-md flex flex-col items-center justify-center text-center hover:translate-x-1 hover:-translate-y-1 hover:shadow-xl ease-in-out transition-all transform-gpu'
+										className='w-full glass text-base-content xs:p-4 p-8 rounded-md flex flex-col items-center justify-center text-center lg:hover:translate-x-1 lg:hover:-translate-y-1 lg:hover:shadow-xl ease-in-out transition-all transform-gpu'
 										key={s.id}
 									>
 										<div className='flex flex-col gap-2'>
@@ -237,23 +237,23 @@ function Home() {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24'>
-						<div className='flex flex-col gap-16 xs:gap-8'>
+					<div className='lg:pb-24 xs:pb-12'>
+						<div className='flex flex-col lg:gap-16 xs:gap-8'>
 							<div className='w-full flex xs:flex-col items-center justify-between xs:gap-8 gap-16'>
-								<h2 className='text-4xl xs:text-3xl font-bold'>
+								<h2 className='lg:text-4xl xs:text-3xl font-bold'>
 									Нам доверяют крупные компании
 								</h2>
-								<p className='text-lg font-medium text-neutral/75 xs:text-center'>
+								<p className='lg:text-lg font-medium text-neutral/75 xs:text-center'>
 									Качественное исследование на полиграфе
 									окупается в десятки раз, именно поэтому наши
 									Партнеры–Заказчики возвращаются к нам и
 									рекомендуют нас своим коллегам.
 								</p>
 							</div>
-							<div className='grid grid-cols-3 xs:grid-cols-2 xs:gap-4 gap-8'>
+							<div className='grid lg:grid-cols-3 xs:grid-cols-2 xs:gap-4 lg:gap-8'>
 								{CompanysContent.map(c => (
 									<div
-										className='w-full glass text-base-content p-8 xs:p-4 rounded-md flex flex-col items-center justify-center text-center hover:translate-x-1 hover:-translate-y-1 hover:shadow-xl ease-in-out transition-all transform-gpu'
+										className='w-full glass text-base-content p-8 xs:p-4 rounded-md flex flex-col items-center justify-center text-center lg:hover:translate-x-1 lg:hover:-translate-y-1 lg:hover:shadow-xl ease-in-out transition-all transform-gpu'
 										key={c.id}
 									>
 										<img
@@ -269,13 +269,13 @@ function Home() {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24 xs:pb-12'>
-						<div className='flex flex-col gap-16 xs:gap-8'>
+					<div className='lg:pb-24 xs:pb-12'>
+						<div className='flex flex-col lg:gap-16 xs:gap-8'>
 							<div className='w-full flex flex-col items-center justify-between xs:gap-8 gap-16'>
-								<h2 className='text-4xl xs:text-3xl font-bold'>
+								<h2 className='lg:text-4xl xs:text-3xl font-bold'>
 									Почему стоит выбрать Триумф?
 								</h2>
-								<p className='text-lg font-medium text-neutral/75 lg:w-5/6 text-center'>
+								<p className='lg:text-lg font-medium text-neutral/75 lg:w-5/6 text-center'>
 									Ключевое. За все проверки экспертов есть
 									ответственное лицо- основатель Триумфа
 									Татьяна Алфеева. В случае вопросов есть
@@ -283,21 +283,21 @@ function Home() {
 									а не полиграфолога или заказчика.
 								</p>
 							</div>
-							<div className='grid grid-cols-2 xs:grid-cols-1 xs:gap-4 gap-8'>
+							<div className='grid lg:grid-cols-2 xs:grid-cols-1 xs:gap-4 lg:gap-8'>
 								{WhyTriumfContent.map(w => (
 									<div
-										className='w-full glass text-base-content xs:p-4 p-8 rounded-md flex flex-col xs:gap-2 gap-4 text-justify hover:translate-x-1 hover:-translate-y-1 hover:shadow-xl ease-in-out transition-all transform-gpu'
+										className='w-full glass text-base-content xs:p-4 lg:p-8 rounded-md flex flex-col xs:gap-2 lg:gap-4 text-justify lg:hover:translate-x-1 lg:hover:-translate-y-1 lg:hover:shadow-xl ease-in-out transition-all transform-gpu'
 										key={w.id}
 									>
 										<div className='w-full flex items-center justify-between'>
-											<span className='text-success drop-shadow-lg'>
+											<span className='text-success'>
 												{w.icon}
 											</span>
-											<h2 className='text-xl xs:text-base xs:text-end xs:font-semibold font-bold'>
+											<h2 className='lg:text-xl xs:text-base xs:text-end xs:font-semibold font-bold'>
 												{w.title}
 											</h2>
 										</div>
-										<p className='text-lg xs:text-sm font-medium text-neutral/75'>
+										<p className='lg:text-lg xs:text-sm font-medium text-neutral/75'>
 											{w.description}
 										</p>
 									</div>
