@@ -136,8 +136,8 @@ export const LayoutServices = () => {
 		<>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='py-8'>
-						<div className='text-base font-medium breadcrumbs'>
+					<div className='lg:py-8 xs:py-4'>
+						<div className='lg:text-base xs:text-sm font-medium breadcrumbs'>
 							<ul>
 								<li>
 									<Link href='/'>
@@ -156,15 +156,15 @@ export const LayoutServices = () => {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24'>
-						<div className='grid grid-cols-3 xs:gap-4 gap-8'>
+					<div className='lg:pb-24 xs:pb-12'>
+						<div className='grid lg:grid-cols-3 xs:gap-4 lg:gap-8'>
 							{ServicesLinks.map(s => (
 								<Link href={s.path} key={s.id}>
 									<a
 										className={
 											TriumfDomen.pathname == s.path
-												? 'w-full lg:glass btn btn-secondary bg-secondary hover:btn-secondary xs:h-24 h-44 text-base font-semibold rounded-md flex flex-col gap-2'
-												: 'w-full glass btn btn-ghost h-44 text-base font-semibold rounded-md hover:btn-secondary xs:h-24 hover:shadow-xl hover:translate-x-1 hover:-translate-y-1 transform-gpu'
+												? 'w-full lg:glass btn btn-secondary lg:bg-secondary bg-secondary hover:btn-secondary xs:h-24 lg:h-44 lg:text-base lg:font-semibold rounded-md flex flex-col gap-2'
+												: 'w-full lg:glass xs:shadow btn btn-ghost h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary xs:h-24 lg:h-44 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'
 										}
 									>
 										<span>{s.title}</span>
@@ -180,27 +180,27 @@ export const LayoutServices = () => {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24'>
+					<div className='lg:pb-24 xs:pb-12'>
 						<div className='flex flex-col gap-16 xs:gap-8'>
 							<div className='flex flex-col'>
-								<h1 className='text-4xl font-bold xs:text-3xl'>
+								<h1 className='lg:text-4xl font-bold xs:text-3xl'>
 									Услуги
 								</h1>
-								<p className='text-lg xs:text-base font-medium text-neutral/75'>
+								<p className='lg:text-lg xs:text-base font-medium text-neutral/75'>
 									{TitleCheck}
 								</p>
 							</div>
 							<div
 								className={
 									TriumfDomen.pathname == '/basic'
-										? 'grid grid-cols-2 xs:grid-cols-2 xs:gap-4 gap-8'
-										: 'grid grid-cols-3 xs:grid-cols-2 xs:gap-4 gap-8'
+										? 'grid grid-cols-2 xs:grid-cols-2 xs:gap-4 lg:gap-8'
+										: 'grid grid-cols-3 xs:grid-cols-2 xs:gap-4 lg:gap-8'
 								}
 							>
 								{TriumfDomen.pathname == '/basic' &&
 									BasicServicesLinks.map(b => (
 										<Link href={b.path} key={b.id}>
-											<a className='w-full btn btn-ghost xs:h-24 h-36 text-base font-semibold glass rounded-md hover:btn-secondary hover:shadow-xl hover:translate-x-1 hover:-translate-y-1 transform-gpu'>
+											<a className='w-full btn btn-ghost xs:h-24 lg:h-36 lg:text-base lg:font-semibold lg:glass xs:shadow rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
 												{b.title}
 											</a>
 										</Link>
@@ -208,7 +208,7 @@ export const LayoutServices = () => {
 								{TriumfDomen.pathname == '/other' &&
 									OtherServicesLinks.map(o => (
 										<Link href={o.path} key={o.id}>
-											<a className='w-full btn btn-ghost xs:h-24 h-36 text-base font-semibold glass rounded-md hover:btn-secondary hover:shadow-xl hover:translate-x-1 hover:-translate-y-1 transform-gpu'>
+											<a className='w-full btn btn-ghost xs:h-24 lg:h-36 lg:text-base lg:font-semibold lg:glass xs:shadow rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
 												{o.title}
 											</a>
 										</Link>
@@ -216,7 +216,7 @@ export const LayoutServices = () => {
 								{TriumfDomen.pathname == '/extra' &&
 									ExtraServicesLinks.map(e => (
 										<Link href={e.path} key={e.id}>
-											<a className='w-full btn btn-ghost xs:h-24 h-36 text-base font-semibold glass rounded-md hover:btn-secondary hover:shadow-xl hover:translate-x-1 hover:-translate-y-1 transform-gpu'>
+											<a className='w-full btn btn-ghost xs:h-24 lg:h-36 lg:text-base lg:font-semibold lg:glass xs:shadow rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
 												{e.title}
 											</a>
 										</Link>
@@ -228,15 +228,18 @@ export const LayoutServices = () => {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24'>
-						<div className='flex flex-col items-center xs:p-8 p-16 glass rounded-md xs:gap-8 gap-16'>
-							<h2 className='text-4xl xs:text-3xl xs:text-center font-bold'>
+					<div className='lg:pb-24 xs:pb-12'>
+						<div className='flex flex-col items-center xs:p-8 lg:p-16 glass rounded-md xs:gap-8 lg:gap-16'>
+							<h2 className='lg:text-4xl xs:text-3xl xs:text-center font-bold'>
 								Затрудняетесь с выбором?
 							</h2>
 							<Link href='/contacts'>
-								<a className='btn btn-secondary btn-lg glass bg-secondary hover:btn-secondary text-base font-semibold rounded-md gap-4 hover:shadow-xl hover:translate-x-1 hover:-translate-y-1 transform-gpu'>
+								<a className='btn btn-secondary lg:btn-lg lg:glass lg:bg-secondary lg:hover:btn-secondary lg:text-base lg:font-semibold rounded-md gap-4 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
 									Проконсультироваться{' '}
-									<FaLongArrowAltRight size={18} />
+									<FaLongArrowAltRight
+										className='xs:hidden lg:block'
+										size={18}
+									/>
 								</a>
 							</Link>
 						</div>

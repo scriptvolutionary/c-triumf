@@ -6,7 +6,7 @@ export const Banner = () => {
 	return (
 		<>
 			{TriumfDomen.pathname !== ('' || '/') ? (
-				<section className='xs:hidden lg:block w-full h-full'>
+				<section className='xs:hidden 2xl:block w-full h-full'>
 					<figure className='fixed lg:-top-44 left-0 w-full xs:w-full h-full -z-10'>
 						<video className='w-full' autoPlay loop>
 							<source src='/cloud.mp4' type='video/mp4' />

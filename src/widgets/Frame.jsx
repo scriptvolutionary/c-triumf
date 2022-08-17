@@ -36,7 +36,7 @@ export const Frame = () => {
 	return (
 		<div className='fixed h-screen z-10 top-0 right-0'>
 			<div className='h-full flex items-center lg:mr-4 xs:pr-2'>
-				<ul className='menu xs:bg-base-100 lg:glass rounded-md'>
+				<ul className='menu xs:bg-base-100 xs:shadow lg:glass rounded-md'>
 					{FrameLinks.map(l => (
 						<li
 							className='tooltip tooltip-left'

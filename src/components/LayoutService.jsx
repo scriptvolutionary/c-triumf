@@ -465,8 +465,8 @@ export const LayoutService = ({ children }) => {
 			</Head>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='py-8'>
-						<div className='text-base font-medium breadcrumbs'>
+					<div className='lg:py-8 xs:py-4'>
+						<div className='lg:text-base xs:text-sm font-medium breadcrumbs'>
 							<ul>
 								<li>
 									<Link href='/'>
@@ -486,20 +486,20 @@ export const LayoutService = ({ children }) => {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24'>
-						<div className='grid grid-cols-3 gap-8 xs:gap-4'>
+					<div className='lg:pb-24 xs:pb-12'>
+						<div className='grid lg:grid-cols-3 lg:gap-8 xs:gap-4'>
 							<Link href={PreviousLinkCheck}>
-								<a className='w-full lg:glass btn btn-ghost xs:h-24 h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu xs:flex-col xs:gap-2 gap-4'>
+								<a className='w-full lg:glass xs:shadow btn btn-ghost h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary xs:h-24 lg:h-44 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu xs:gap-2 lg:gap-4'>
 									<FaLongArrowAltLeft size={24} />
 									{PreviousTitleCheck}
 								</a>
 							</Link>
-							<button className='cursor-default w-full bg-secondary text-secondary-content xs:h-24 h-44 uppercase flex flex-col items-center justify-center lg:text-base lg:font-semibold  rounded-md gap-2'>
+							<button className='w-full lg:glass btn btn-secondary lg:bg-secondary bg-secondary hover:btn-secondary xs:h-24 lg:h-44 lg:text-base lg:font-semibold rounded-md flex flex-col gap-2'>
 								<span>{SubTitleCheck}</span>
 								<span className='w-2/3 h-1 bg-secondary-content'></span>
 							</button>
 							<Link href={NextLinkCheck}>
-								<a className='w-full lg:glass btn btn-ghost xs:h-24 h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu xs:flex-col xs:gap-2 gap-4'>
+								<a className='w-full lg:glass xs:shadow btn btn-ghost h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary xs:h-24 lg:h-44 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu xs:gap-2 lg:gap-4'>
 									{NextTitleCheck}
 									<FaLongArrowAltRight size={24} />
 								</a>
@@ -510,24 +510,24 @@ export const LayoutService = ({ children }) => {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24'>
-						<div className='flex flex-col gap-16'>
+					<div className='lg:pb-24 xs:pb-12'>
+						<div className='flex flex-col lg:gap-16 xs:gap-8'>
 							<div className='flex flex-col'>
-								<h1 className='text-4xl xs:text-3xl font-bold'>
+								<h1 className='lg:text-4xl xs:text-3xl font-bold'>
 									{TitleCheck}
 								</h1>
-								<p className='text-lg xs:text-base font-medium text-neutral/75'>
+								<p className='lg:text-lg xs:text-base font-medium text-neutral/75'>
 									{SubTitleCheck}
 								</p>
 							</div>
-							<div className='glass w-full h-full rounded-md xs:p-4 p-8'>
+							<div className='glass w-full h-full rounded-md xs:p-4 lg:p-8'>
 								<div className='mb-16 xs:mb-8'>
 									<div className='flex flex-col xs:gap-8 gap-16'>
 										<div className='flex flex-col'>
-											<h1 className='text-3xl font-semibold'>
+											<h1 className='lg:text-3xl xs:text-2xl font-semibold'>
 												{SubTitleCheck}
 											</h1>
-											<p className='text-lg uppercase text-neutral/75 font-semibold flex items-center gap-1'>
+											<p className='lg:text-lg xs:text-base uppercase text-neutral/75 font-semibold flex items-center gap-1'>
 												От{' '}
 												<span className='underline underline-offset-2'>
 													{PriceTitleCheck}
@@ -540,19 +540,19 @@ export const LayoutService = ({ children }) => {
 										</div>
 									</div>
 								</div>
-								{TriumfDomen.pathname ==
+								{/* {TriumfDomen.pathname ==
 								BasicServicesLinks[0].path ? (
-									<div className='w-full flex items-center justify-between'>
-										<div className='flex xs:flex-col xs:gap-2 xs:items-start items-center gap-4'>
-											<a className='btn btn-ghost xs:btn-sm glass lg:text-base lg:font-semibold lg:hover:shadow-xl lg:hover:btn-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md'>
+									<div className='w-full flex lg:flex-row xs:flex-col lg:items-center lg:gap-2 justify-between'>
+										<div className='flex xs:flex-col xs:gap-2 xs:items-start items-center lg:gap-4'>
+											<a className='btn btn-ghost glass lg:text-base lg:font-semibold lg:hover:shadow-xl lg:hover:btn-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md'>
 												Подготовка к расследованию
 											</a>
-											<a className='btn btn-ghost xs:btn-sm glass lg:text-base lg:font-semibold lg:hover:shadow-xl lg:hover:btn-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md'>
+											<a className='btn btn-ghost glass lg:text-base lg:font-semibold lg:hover:shadow-xl lg:hover:btn-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md'>
 												Подготовка вопросов
 											</a>
 										</div>
 										<Link href={PriceLinkCheck}>
-											<a className='btn btn-secondary glass bg-secondary lg:text-base lg:font-semibold lg:hover:shadow-xl hover:btn-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md gap-2'>
+											<a className='btn btn-secondary lg:glass lg:bg-secondary lg:text-base lg:font-semibold lg:hover:shadow-xl hover:btn-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md gap-2'>
 												В цены{' '}
 												<FaShoppingCart size={18} />
 											</a>
@@ -561,13 +561,20 @@ export const LayoutService = ({ children }) => {
 								) : (
 									<div className='flex justify-end'>
 										<Link href={PriceLinkCheck}>
-											<a className='btn btn-secondary lg:btn-lg lg:glass bg-secondary hover:btn-secondary lg:text-base lg:font-semibold rounded-md gap-4 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
+											<a className='btn btn-secondary lg:glass lg:bg-secondary lg:text-base lg:font-semibold lg:hover:shadow-xl hover:btn-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md gap-2'>
 												В цены{' '}
 												<FaShoppingCart size={18} />
 											</a>
 										</Link>
 									</div>
-								)}
+								)} */}
+								<div className='flex justify-end'>
+									<Link href={PriceLinkCheck}>
+										<a className='btn btn-secondary lg:glass lg:bg-secondary lg:text-base lg:font-semibold lg:hover:shadow-xl hover:btn-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md gap-2'>
+											В цены <FaShoppingCart size={18} />
+										</a>
+									</Link>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -575,15 +582,18 @@ export const LayoutService = ({ children }) => {
 			</section>
 			<section className='w-screen h-full'>
 				<div className='max-w-7xl mx-auto px-4'>
-					<div className='pb-24'>
-						<div className='flex flex-col items-center xs:p-8 p-16 glass rounded-md xs:gap-8 gap-16'>
-							<h2 className='text-4xl xs:text-3xl font-bold xs:text-center'>
+					<div className='lg:pb-24 xs:pb-12'>
+						<div className='flex flex-col items-center xs:p-8 lg:p-16 glass rounded-md xs:gap-8 lg:gap-16'>
+							<h2 className='lg:text-4xl xs:text-3xl font-bold xs:text-center'>
 								Появился вопрос по услуге?
 							</h2>
 							<Link href='/contacts'>
 								<a className='btn btn-secondary lg:btn-lg lg:glass bg-secondary hover:btn-secondary lg:text-base lg:font-semibold rounded-md gap-4 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
 									Обратная связь{' '}
-									<FaLongArrowAltRight size={18} />
+									<FaLongArrowAltRight
+										className='lg:block xs:hidden'
+										size={18}
+									/>
 								</a>
 							</Link>
 						</div>
