@@ -1,7 +1,7 @@
 import { LayoutPrices } from '../components/LayoutPrices'
 
 function PriceBasic() {
-	return <LayoutPrices />
+    return <LayoutPrices />
 }
 
 PriceBasic.pageTitle = 'Цены основных проверок'

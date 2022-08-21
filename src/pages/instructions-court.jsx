@@ -1,7 +1,7 @@
 import { LayoutInstructions } from '../components/LayoutInstructions'
 
 function InstructionsCourt() {
-	return <LayoutInstructions />
+    return <LayoutInstructions />
 }
 
 InstructionsCourt.pageTitle = 'Инструкции для суда'

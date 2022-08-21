@@ -1,7 +1,7 @@
 import { LayoutServices } from '../../components/LayoutServices'
 
 function Other() {
-	return <LayoutServices />
+    return <LayoutServices />
 }
 
 Other.pageTitle = 'Другие проверки'

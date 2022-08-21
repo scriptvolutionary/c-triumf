@@ -1,7 +1,7 @@
 import { LayoutPrices } from '../components/LayoutPrices'
 
 function PriceOther() {
-	return <LayoutPrices />
+    return <LayoutPrices />
 }
 
 PriceOther.pageTitle = 'Цены других проверок'

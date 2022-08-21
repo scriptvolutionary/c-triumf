@@ -1,7 +1,7 @@
 import { LayoutServices } from '../../components/LayoutServices'
 
 function Extra() {
-	return <LayoutServices />
+    return <LayoutServices />
 }
 
 Extra.pageTitle = 'Опции (доп. проверки)'

@@ -1,9 +1,10 @@
+import { LayoutOffer } from '../components/LayoutOffer'
+
 function Offer() {
-	return <>asd</>
+    return <LayoutOffer />
 }
 
-Offer.pageTitle = 'Публичная оферта'
-Offer.pageKeywords = 'Ключи'
+Offer.pageTitle = 'Публичная оферта для суда'
 Offer.pageDescription = 'Описание'
 Offer.pageType = 'website'
 

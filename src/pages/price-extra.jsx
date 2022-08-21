@@ -1,7 +1,7 @@
 import { LayoutPrices } from '../components/LayoutPrices'
 
 function PriceExtra() {
-	return <LayoutPrices />
+    return <LayoutPrices />
 }
 
 PriceExtra.pageTitle = 'Цены опций (доп. услуг)'
