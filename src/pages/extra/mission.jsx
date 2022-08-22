@@ -9,8 +9,6 @@ function Mission() {
 }
 
 Mission.pageTitle = 'Командировка'
-Mission.pageKeywords = 'Ключи'
 Mission.pageDescription = 'Описание'
-Mission.pageType = 'website'
 
 export default Mission

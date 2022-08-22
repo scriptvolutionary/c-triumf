@@ -5,8 +5,6 @@ function Other() {
 }
 
 Other.pageTitle = 'Другие проверки'
-Other.pageKeywords = 'Ключи'
 Other.pageDescription = 'Описание'
-Other.pageType = 'website'
 
 export default Other

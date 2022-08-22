@@ -9,8 +9,6 @@ function Media() {
 }
 
 Media.pageTitle = 'Материалы'
-Media.pageKeywords = 'Ключи'
 Media.pageDescription = 'Описание'
-Media.pageType = 'website'
 
 export default Media

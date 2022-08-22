@@ -9,8 +9,6 @@ function Investigation() {
 }
 
 Investigation.pageTitle = 'Расследование. По факту хищения или другое'
-Investigation.pageKeywords = 'Ключи'
 Investigation.pageDescription = 'Описание'
-Investigation.pageType = 'website'
 
 export default Investigation

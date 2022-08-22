@@ -9,8 +9,6 @@ function CourtAndLawyer() {
 }
 
 CourtAndLawyer.pageTitle = 'Для суда и адвокатов'
-CourtAndLawyer.pageKeywords = 'Ключи'
 CourtAndLawyer.pageDescription = 'Описание'
-CourtAndLawyer.pageType = 'website'
 
 export default CourtAndLawyer

@@ -37,10 +37,7 @@ export const Frame = () => {
                             <a
                                 className='btn btn-ghost text-base font-semibold lg:glass-default xs:hover:btn-secondary shadow-none lg:hover:btn-secondary lg:hover:shadow-xl lg:hover:-translate-y-1 lg:hover:translate-x-1 rounded-md transform-gpu'
                                 href={l.path}
-                                target={
-                                    l.path !== ('mailto:test@c-triumf.ru' || 'tel:+79067772503') &&
-                                    '_blank'
-                                }
+                                target={l.path !== ('mailto:test@c-triumf.ru' || 'tel:+79067772503') && '_blank'}
                             >
                                 {l.icon}
                             </a>

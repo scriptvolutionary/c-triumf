@@ -18,23 +18,16 @@ export const Banner = () => {
                     <div className='card lg:h-[840px] w-full image-full rounded-none -z-10'>
                         <figure>
                             <video className='xs:hidden lg:block absolute w-full' autoPlay loop>
-                                <source
-                                    src='https://assets.website-files.com/5c6d317b07ffea21a7d539d9/5c6d4b9eaf4da332e4be8fd1_video-clouds-transcode.mp4'
-                                    type='video/mp4'
-                                />
+                                <source src='https://assets.website-files.com/5c6d317b07ffea21a7d539d9/5c6d4b9eaf4da332e4be8fd1_video-clouds-transcode.mp4' type='video/mp4' />
                             </video>
                         </figure>
                         <div className='card-body max-w-7xl mx-auto px-4'>
                             <div className='w-full h-full flex flex-col justify-center'>
                                 <div className='w-full xs:text-justify flex flex-col gap-8 lg:w-5/6'>
-                                    <h2 className='text-neutral lg:text-5xl xs:text-2xl font-bold'>
-                                        Полиграфолог. Проверка на полиграфе в Москве.
-                                    </h2>
+                                    <h2 className='text-neutral lg:text-5xl xs:text-2xl font-bold'>Полиграфолог. Проверка на полиграфе в Москве.</h2>
                                     <p className='lg:text-xl xs:text-sm text-neutral/75 text-justify font-semibold'>
-                                        Благодарю за обращение в Экспертный центр Триумф. Я
-                                        гарантирую независимую проверку на полиграфе за разумную
-                                        цену. Также здесь есть полиграфологи разных категорий на м.
-                                        Академическая и м. Белорусская в 5 мин. от метро.
+                                        Благодарю за обращение в Экспертный центр Триумф. Я гарантирую независимую проверку на полиграфе за разумную цену. Также здесь есть полиграфологи разных
+                                        категорий на м. Академическая и м. Белорусская в 5 мин. от метро.
                                     </p>
                                 </div>
                             </div>

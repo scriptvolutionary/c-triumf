@@ -5,8 +5,6 @@ function Instructions() {
 }
 
 Instructions.pageTitle = 'Инструкции для физ. и юр. лиц'
-Instructions.pageKeywords = 'Ключи'
 Instructions.pageDescription = 'Описание'
-Instructions.pageType = 'website'
 
 export default Instructions

@@ -9,8 +9,6 @@ function DepartureToClient() {
 }
 
 DepartureToClient.pageTitle = 'Выезд к Заказчику'
-DepartureToClient.pageKeywords = 'Ключи'
 DepartureToClient.pageDescription = 'Описание'
-DepartureToClient.pageType = 'website'
 
 export default DepartureToClient

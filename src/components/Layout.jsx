@@ -21,7 +21,6 @@ export const Layout = ({ pageTitle, pageDescription, pageType, children }) => {
                 <meta name='description' content={pageDescription} />
                 <meta property='og:title' content={`«Триумф» — ${pageTitle}`} />
                 <meta property='og:description' content={pageDescription} />
-                <meta property='og:type' content={pageType} />
 
                 <meta property='og:url' content={`https://c-triumf.ru${TriumfDomen.asPath}`} />
                 <link rel='canonical' href={`https://c-triumf.ru${TriumfDomen.asPath}`} />

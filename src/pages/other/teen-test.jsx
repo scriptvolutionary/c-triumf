@@ -9,8 +9,6 @@ function TeenTest() {
 }
 
 TeenTest.pageTitle = 'Тест подростков (14-17 лет)'
-TeenTest.pageKeywords = 'Ключи'
 TeenTest.pageDescription = 'Описание'
-TeenTest.pageType = 'website'
 
 export default TeenTest

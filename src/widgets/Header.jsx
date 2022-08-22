@@ -97,10 +97,7 @@ export const Header = () => {
             <div className='max-w-7xl mx-auto px-4'>
                 <div className='flex items-center justify-between py-4'>
                     <Link href='/'>
-                        <img
-                            className='cursor-pointer active:scale-95 hover:opacity-90 w-24 h-full ease-in-out transition-all transform-gpu'
-                            src='/logo.svg'
-                        />
+                        <img className='cursor-pointer active:scale-95 hover:opacity-90 w-24 h-full ease-in-out transition-all transform-gpu' src='/logo.svg' />
                     </Link>
                     <div className='xs:hidden lg:flex items-center justify-between gap-8'>
                         {HeaderLinks.map((l) => (
@@ -114,10 +111,7 @@ export const Header = () => {
                                     </a>
                                 </Link>
                                 {l.content && (
-                                    <ul
-                                        className='dropdown-content glass-default mt-2 w-80 shadow-md rounded-md'
-                                        tabIndex={0}
-                                    >
+                                    <ul className='dropdown-content glass-default mt-2 w-80 shadow-md rounded-md' tabIndex={0}>
                                         {l.content.map((c) => (
                                             <Link href={c.path} key={c.id}>
                                                 <a className='btn btn-ghost btn-block justify-start normal-case text-base font-semibold glass-default shadow-none hover:btn-secondary hover:shadow-xl hover:-translate-y-1 hover:translate-x-1 rounded-md transform-gpu'>
@@ -135,10 +129,7 @@ export const Header = () => {
                             <label className='btn btn-ghost rounded-md' tabIndex={0}>
                                 <FaBars size={20} />
                             </label>
-                            <ul
-                                className='dropdown-content menu mt-2 shadow bg-base-100 rounded-md w-72'
-                                tabIndex={0}
-                            >
+                            <ul className='dropdown-content menu mt-2 shadow bg-base-100 rounded-md w-72' tabIndex={0}>
                                 {HeaderLinks.map((l) => (
                                     <li key={l.id}>
                                         <Link href={l.path}>

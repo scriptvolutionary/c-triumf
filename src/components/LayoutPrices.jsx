@@ -6,23 +6,10 @@ import { FaLongArrowAltRight, FaQuestionCircle, FaRubleSign } from 'react-icons/
 export const LayoutPrices = () => {
     const TriumfDomen = useRouter()
 
-    const LinkCheck =
-        TriumfDomen.pathname == '/price-basic'
-            ? '/price-basic'
-            : TriumfDomen.pathname == '/price-other'
-            ? '/price-other'
-            : TriumfDomen.pathname == '/price-extra'
-            ? '/price-extra'
-            : ''
+    const LinkCheck = TriumfDomen.pathname == '/price-basic' ? '/price-basic' : TriumfDomen.pathname == '/price-other' ? '/price-other' : TriumfDomen.pathname == '/price-extra' ? '/price-extra' : ''
 
     const TitleCheck =
-        TriumfDomen.pathname == '/price-basic'
-            ? 'Основные проверки'
-            : TriumfDomen.pathname == '/price-other'
-            ? 'Другие проверки'
-            : TriumfDomen.pathname == '/price-extra'
-            ? 'Опции (доп. услуги)'
-            : ''
+        TriumfDomen.pathname == '/price-basic' ? 'Основные проверки' : TriumfDomen.pathname == '/price-other' ? 'Другие проверки' : TriumfDomen.pathname == '/price-extra' ? 'Опции (доп. услуги)' : ''
 
     const PricesLinks = [
         { id: 0, title: 'Основные проверки', path: '/price-basic' },
@@ -325,9 +312,7 @@ export const LayoutPrices = () => {
                                         }
                                     >
                                         <span>{s.title}</span>
-                                        {TriumfDomen.pathname == s.path && (
-                                            <span className='w-2/3 h-1 bg-secondary-content'></span>
-                                        )}
+                                        {TriumfDomen.pathname == s.path && <span className='w-2/3 h-1 bg-secondary-content'></span>}
                                     </a>
                                 </Link>
                             ))}
@@ -341,9 +326,7 @@ export const LayoutPrices = () => {
                         <div className='flex flex-col lg:gap-16 xs:gap-8'>
                             <div className='flex flex-col'>
                                 <h1 className='lg:text-4xl xs:text-3xl font-bold'>Цены</h1>
-                                <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>
-                                    {TitleCheck}
-                                </p>
+                                <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>{TitleCheck}</p>
                             </div>
                             <div className='w-full flex md:flex-row xs:flex-col lg:gap-8 xs:gap-4'>
                                 <div className='md:w-1/3 xs:w-full'>
@@ -402,26 +385,16 @@ export const LayoutPrices = () => {
                                     <div className='flex flex-col gap-8'>
                                         {TriumfDomen.pathname == '/price-basic' &&
                                             BasicServicesLinks.map((l) => (
-                                                <div
-                                                    className='w-full rounded-md glass lg:p-8 xs:p-4'
-                                                    id={l.serviceId}
-                                                    key={l.id}
-                                                >
+                                                <div className='w-full rounded-md glass lg:p-8 xs:p-4' id={l.serviceId} key={l.id}>
                                                     <div className='flex flex-col lg:gap-4 xs:gap-4'>
                                                         <div className='flex xs:flex-col lg:flex-row lg:items-center xs:gap-2 justify-between'>
                                                             <h2 className='flex items-center gap-2 lg:text-end font-semibold lg:text-2xl xs:text-lg'>
                                                                 {l.title}
                                                                 {l.servicePath && (
-                                                                    <span
-                                                                        className='tooltip'
-                                                                        data-tip='Подробнее'
-                                                                    >
+                                                                    <span className='tooltip' data-tip='Подробнее'>
                                                                         <Link href={l.servicePath}>
                                                                             <a>
-                                                                                <FaQuestionCircle
-                                                                                    className='text-secondary'
-                                                                                    size={20}
-                                                                                />
+                                                                                <FaQuestionCircle className='text-secondary' size={20} />
                                                                             </a>
                                                                         </Link>
                                                                     </span>
@@ -430,32 +403,18 @@ export const LayoutPrices = () => {
                                                             <Link href='/contacts'>
                                                                 <a className='btn btn-secondary lg:glass lg:bg-secondary bg-secondary shadow-none lg:hover:btn-secondary lg:hover:shadow-lg lg:hover:translate-x-1 rounded-md items-center xs:justify-between gap-4'>
                                                                     Заказать
-                                                                    <FaLongArrowAltRight
-                                                                        size={18}
-                                                                    />
+                                                                    <FaLongArrowAltRight size={18} />
                                                                 </a>
                                                             </Link>
                                                         </div>
                                                         <div className='stats stats-horizontal lg:glass xs:shadow rounded-md'>
                                                             {l.priceContent?.map((p) => (
-                                                                <div
-                                                                    className='lg:glass stat flex flex-col items-center'
-                                                                    key={p.id}
-                                                                >
-                                                                    {p.title && (
-                                                                        <div className='stat-title'>
-                                                                            {p.title}
-                                                                        </div>
-                                                                    )}
+                                                                <div className='lg:glass stat flex flex-col items-center' key={p.id}>
+                                                                    {p.title && <div className='stat-title'>{p.title}</div>}
                                                                     <div className='lg:stat-value xs:text-3xl flex items-center justify-center gap-1'>
-                                                                        {p.price}{' '}
-                                                                        <FaRubleSign className='lg:w-7 lg:h-7 xs:w-4 xs:h-4' />
+                                                                        {p.price} <FaRubleSign className='lg:w-7 lg:h-7 xs:w-4 xs:h-4' />
                                                                     </div>
-                                                                    {p.desc && (
-                                                                        <div className='stat-desc'>
-                                                                            {p.desc}
-                                                                        </div>
-                                                                    )}
+                                                                    {p.desc && <div className='stat-desc'>{p.desc}</div>}
                                                                 </div>
                                                             ))}
                                                         </div>
@@ -464,26 +423,16 @@ export const LayoutPrices = () => {
                                             ))}
                                         {TriumfDomen.pathname == '/price-other' &&
                                             OtherServicesLinks.map((l) => (
-                                                <div
-                                                    className='w-full rounded-md glass lg:p-8 xs:p-4'
-                                                    id={l.serviceId}
-                                                    key={l.id}
-                                                >
+                                                <div className='w-full rounded-md glass lg:p-8 xs:p-4' id={l.serviceId} key={l.id}>
                                                     <div className='flex flex-col lg:gap-4 xs:gap-4'>
                                                         <div className='flex xs:flex-col lg:flex-row lg:items-center xs:gap-2 justify-between'>
                                                             <h2 className='flex items-center gap-2 lg:text-end font-semibold lg:text-2xl xs:text-lg'>
                                                                 {l.title}
                                                                 {l.servicePath && (
-                                                                    <span
-                                                                        className='tooltip'
-                                                                        data-tip='Подробнее'
-                                                                    >
+                                                                    <span className='tooltip' data-tip='Подробнее'>
                                                                         <Link href={l.servicePath}>
                                                                             <a>
-                                                                                <FaQuestionCircle
-                                                                                    className='text-secondary'
-                                                                                    size={20}
-                                                                                />
+                                                                                <FaQuestionCircle className='text-secondary' size={20} />
                                                                             </a>
                                                                         </Link>
                                                                     </span>
@@ -492,32 +441,18 @@ export const LayoutPrices = () => {
                                                             <Link href='/contacts'>
                                                                 <a className='btn btn-secondary lg:glass lg:bg-secondary bg-secondary shadow-none lg:hover:btn-secondary lg:hover:shadow-lg lg:hover:translate-x-1 rounded-md items-center xs:justify-between gap-4'>
                                                                     Заказать
-                                                                    <FaLongArrowAltRight
-                                                                        size={18}
-                                                                    />
+                                                                    <FaLongArrowAltRight size={18} />
                                                                 </a>
                                                             </Link>
                                                         </div>
                                                         <div className='stats stats-horizontal lg:glass xs:shadow rounded-md'>
                                                             {l.priceContent?.map((p) => (
-                                                                <div
-                                                                    className='lg:glass stat flex flex-col items-center'
-                                                                    key={p.id}
-                                                                >
-                                                                    {p.title && (
-                                                                        <div className='stat-title'>
-                                                                            {p.title}
-                                                                        </div>
-                                                                    )}
+                                                                <div className='lg:glass stat flex flex-col items-center' key={p.id}>
+                                                                    {p.title && <div className='stat-title'>{p.title}</div>}
                                                                     <div className='lg:stat-value xs:text-3xl flex items-center justify-center gap-1'>
-                                                                        {p.price}{' '}
-                                                                        <FaRubleSign className='lg:w-7 lg:h-7 xs:w-4 xs:h-4' />
+                                                                        {p.price} <FaRubleSign className='lg:w-7 lg:h-7 xs:w-4 xs:h-4' />
                                                                     </div>
-                                                                    {p.desc && (
-                                                                        <div className='stat-desc'>
-                                                                            {p.desc}
-                                                                        </div>
-                                                                    )}
+                                                                    {p.desc && <div className='stat-desc'>{p.desc}</div>}
                                                                 </div>
                                                             ))}
                                                         </div>
@@ -526,26 +461,16 @@ export const LayoutPrices = () => {
                                             ))}
                                         {TriumfDomen.pathname == '/price-extra' &&
                                             ExtraServicesLinks.map((l) => (
-                                                <div
-                                                    className='w-full rounded-md glass lg:p-8 xs:p-4'
-                                                    id={l.serviceId}
-                                                    key={l.id}
-                                                >
+                                                <div className='w-full rounded-md glass lg:p-8 xs:p-4' id={l.serviceId} key={l.id}>
                                                     <div className='flex flex-col lg:gap-4 xs:gap-4'>
                                                         <div className='flex xs:flex-col lg:flex-row lg:items-center xs:gap-2 justify-between'>
                                                             <h2 className='flex items-center gap-2 lg:text-end font-semibold lg:text-2xl xs:text-lg'>
                                                                 {l.title}
                                                                 {l.servicePath && (
-                                                                    <span
-                                                                        className='tooltip'
-                                                                        data-tip='Подробнее'
-                                                                    >
+                                                                    <span className='tooltip' data-tip='Подробнее'>
                                                                         <Link href={l.servicePath}>
                                                                             <a>
-                                                                                <FaQuestionCircle
-                                                                                    className='text-secondary'
-                                                                                    size={20}
-                                                                                />
+                                                                                <FaQuestionCircle className='text-secondary' size={20} />
                                                                             </a>
                                                                         </Link>
                                                                     </span>
@@ -554,32 +479,18 @@ export const LayoutPrices = () => {
                                                             <Link href='/contacts'>
                                                                 <a className='btn btn-secondary lg:glass lg:bg-secondary bg-secondary shadow-none lg:hover:btn-secondary lg:hover:shadow-lg lg:hover:translate-x-1 rounded-md items-center xs:justify-between gap-4'>
                                                                     Заказать
-                                                                    <FaLongArrowAltRight
-                                                                        size={18}
-                                                                    />
+                                                                    <FaLongArrowAltRight size={18} />
                                                                 </a>
                                                             </Link>
                                                         </div>
                                                         <div className='stats stats-horizontal lg:glass xs:shadow rounded-md'>
                                                             {l.priceContent?.map((p) => (
-                                                                <div
-                                                                    className='lg:glass stat flex flex-col items-center'
-                                                                    key={p.id}
-                                                                >
-                                                                    {p.title && (
-                                                                        <div className='stat-title'>
-                                                                            {p.title}
-                                                                        </div>
-                                                                    )}
+                                                                <div className='lg:glass stat flex flex-col items-center' key={p.id}>
+                                                                    {p.title && <div className='stat-title'>{p.title}</div>}
                                                                     <div className='lg:stat-value xs:text-3xl flex items-center justify-center gap-1'>
-                                                                        {p.price}{' '}
-                                                                        <FaRubleSign className='lg:w-7 lg:h-7 xs:w-4 xs:h-4' />
+                                                                        {p.price} <FaRubleSign className='lg:w-7 lg:h-7 xs:w-4 xs:h-4' />
                                                                     </div>
-                                                                    {p.desc && (
-                                                                        <div className='stat-desc'>
-                                                                            {p.desc}
-                                                                        </div>
-                                                                    )}
+                                                                    {p.desc && <div className='stat-desc'>{p.desc}</div>}
                                                                 </div>
                                                             ))}
                                                         </div>

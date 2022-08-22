@@ -9,8 +9,6 @@ function IndividualConsultation() {
 }
 
 IndividualConsultation.pageTitle = 'Индивидуальная консультация'
-IndividualConsultation.pageKeywords = 'Ключи'
 IndividualConsultation.pageDescription = 'Описание'
-IndividualConsultation.pageType = 'website'
 
 export default IndividualConsultation

@@ -5,8 +5,6 @@ function InstructionsCourt() {
 }
 
 InstructionsCourt.pageTitle = 'Инструкции для суда'
-InstructionsCourt.pageKeywords = 'Ключи'
 InstructionsCourt.pageDescription = 'Описание'
-InstructionsCourt.pageType = 'website'
 
 export default InstructionsCourt

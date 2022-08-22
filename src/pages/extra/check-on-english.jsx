@@ -9,8 +9,6 @@ function CheckOnEnglish() {
 }
 
 CheckOnEnglish.pageTitle = 'Проверка на английском языке'
-CheckOnEnglish.pageKeywords = 'Ключи'
 CheckOnEnglish.pageDescription = 'Описание'
-CheckOnEnglish.pageType = 'website'
 
 export default CheckOnEnglish

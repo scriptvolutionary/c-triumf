@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://c-triumf.ru
+
+# Sitemaps
+Sitemap: https://c-triumf.ru/sitemap.xml

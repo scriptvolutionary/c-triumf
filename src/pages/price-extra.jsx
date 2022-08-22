@@ -5,8 +5,6 @@ function PriceExtra() {
 }
 
 PriceExtra.pageTitle = 'Цены опций (доп. услуг)'
-PriceExtra.pageKeywords = 'Ключи'
 PriceExtra.pageDescription = 'Описание'
-PriceExtra.pageType = 'website'
 
 export default PriceExtra

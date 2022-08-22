@@ -3,12 +3,7 @@ import '../shared/styles/globals.css'
 
 function App({ Component, pageProps }) {
     return (
-        <Layout
-            pageTitle={Component.pageTitle}
-            pageKeywords={Component.pageKeywords}
-            pageDescription={Component.pageDescription}
-            pageType={Component.pageType}
-        >
+        <Layout pageTitle={Component.pageTitle} pageDescription={Component.pageDescription}>
             <Component {...pageProps} />
         </Layout>
     )

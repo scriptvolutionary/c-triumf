@@ -9,8 +9,6 @@ function Recruitment() {
 }
 
 Recruitment.pageTitle = 'При приёме на работу'
-Recruitment.pageKeywords = 'Ключи'
 Recruitment.pageDescription = 'Описание'
-Recruitment.pageType = 'website'
 
 export default Recruitment

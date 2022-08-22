@@ -5,8 +5,6 @@ function PriceBasic() {
 }
 
 PriceBasic.pageTitle = 'Цены основных проверок'
-PriceBasic.pageKeywords = 'Ключи'
 PriceBasic.pageDescription = 'Описание'
-PriceBasic.pageType = 'website'
 
 export default PriceBasic

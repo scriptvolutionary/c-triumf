@@ -9,8 +9,6 @@ function ScheduledCheckOfEmployees() {
 }
 
 ScheduledCheckOfEmployees.pageTitle = 'Плановая проверка работников'
-ScheduledCheckOfEmployees.pageKeywords = 'Ключи'
 ScheduledCheckOfEmployees.pageDescription = 'Описание'
-ScheduledCheckOfEmployees.pageType = 'website'
 
 export default ScheduledCheckOfEmployees

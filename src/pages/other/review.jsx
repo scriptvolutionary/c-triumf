@@ -9,8 +9,6 @@ function Review() {
 }
 
 Review.pageTitle = 'Рецензия (аудит суд. экспертизы)'
-Review.pageKeywords = 'Ключи'
 Review.pageDescription = 'Описание'
-Review.pageType = 'website'
 
 export default Review

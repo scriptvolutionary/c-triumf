@@ -9,8 +9,6 @@ function YourQuestions() {
 }
 
 YourQuestions.pageTitle = 'Ваши вопросы'
-YourQuestions.pageKeywords = 'Ключи'
 YourQuestions.pageDescription = 'Описание'
-YourQuestions.pageType = 'website'
 
 export default YourQuestions

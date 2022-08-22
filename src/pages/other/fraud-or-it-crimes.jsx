@@ -9,8 +9,6 @@ function FraudOrItCrimes() {
 }
 
 FraudOrItCrimes.pageTitle = 'Мошенничество или IT преступления'
-FraudOrItCrimes.pageKeywords = 'Ключи'
 FraudOrItCrimes.pageDescription = 'Описание'
-FraudOrItCrimes.pageType = 'website'
 
 export default FraudOrItCrimes

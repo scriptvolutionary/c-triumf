@@ -9,8 +9,6 @@ function PersonalLife() {
 }
 
 PersonalLife.pageTitle = 'Личная жизнь'
-PersonalLife.pageKeywords = 'Ключи'
 PersonalLife.pageDescription = 'Описание'
-PersonalLife.pageType = 'website'
 
 export default PersonalLife

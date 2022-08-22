@@ -9,8 +9,6 @@ function TrialTesting() {
 }
 
 TrialTesting.pageTitle = 'Пробное тестирование'
-TrialTesting.pageKeywords = 'Ключи'
 TrialTesting.pageDescription = 'Описание'
-TrialTesting.pageType = 'website'
 
 export default TrialTesting

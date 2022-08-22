@@ -5,19 +5,9 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 export const LayoutInstructions = () => {
     const TriumfDomen = useRouter()
 
-    const LinkCheck =
-        TriumfDomen.pathname == '/instructions'
-            ? '/instructions'
-            : TriumfDomen.pathname == '/instructions-court'
-            ? '/instructions-court'
-            : ''
+    const LinkCheck = TriumfDomen.pathname == '/instructions' ? '/instructions' : TriumfDomen.pathname == '/instructions-court' ? '/instructions-court' : ''
 
-    const TitleCheck =
-        TriumfDomen.pathname == '/instructions'
-            ? 'Для физ. и юр. лиц'
-            : TriumfDomen.pathname == '/instructions-court'
-            ? 'Для суда'
-            : ''
+    const TitleCheck = TriumfDomen.pathname == '/instructions' ? 'Для физ. и юр. лиц' : TriumfDomen.pathname == '/instructions-court' ? 'Для суда' : ''
 
     const InstructionsLinks = [
         {
@@ -228,9 +218,7 @@ export const LayoutInstructions = () => {
                                         }
                                     >
                                         <span>{s.title}</span>
-                                        {TriumfDomen.pathname == s.path && (
-                                            <span className='w-2/3 h-1 bg-secondary-content'></span>
-                                        )}
+                                        {TriumfDomen.pathname == s.path && <span className='w-2/3 h-1 bg-secondary-content'></span>}
                                     </a>
                                 </Link>
                             ))}
@@ -244,35 +232,21 @@ export const LayoutInstructions = () => {
                         <div className='flex flex-col lg:gap-16 xs:gap-8'>
                             <div className='flex flex-col'>
                                 <h1 className='lg:text-4xl xs:text-3xl font-bold'>Инструкции</h1>
-                                <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>
-                                    {TitleCheck}
-                                </p>
+                                <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>{TitleCheck}</p>
                             </div>
                             <div className='flex flex-col lg:gap-8 xs:gap-4'>
                                 {TriumfDomen.pathname == '/instructions' &&
                                     InstructionsDefaultContent.map((i) => (
-                                        <div
-                                            className='lg:glass w-full h-full rounded-md lg:p-8 xs:p-4 xs:shadow'
-                                            key={i.id}
-                                        >
+                                        <div className='lg:glass w-full h-full rounded-md lg:p-8 xs:p-4 xs:shadow' key={i.id}>
                                             <div className='flex flex-col lg:gap-16 xs:gap-8'>
                                                 <div className='flex flex-col lg:gap-8 xs:gap-4'>
-                                                    <h1 className='lg:text-3xl xs:text-2xl font-bold'>
-                                                        {i.title}
-                                                    </h1>
+                                                    <h1 className='lg:text-3xl xs:text-2xl font-bold'>{i.title}</h1>
                                                     <div className='w-full flex flex-col lg:gap-8 xs:gap-4'>
                                                         {i.content?.map((c) => (
-                                                            <div
-                                                                className='w-full flex xs:flex-col lg:flex-row items-center lg:gap-8 xs:gap-4'
-                                                                key={c.id}
-                                                            >
+                                                            <div className='w-full flex xs:flex-col lg:flex-row items-center lg:gap-8 xs:gap-4' key={c.id}>
                                                                 <div className='lg:w-5/6 xs:w-full flex flex-col lg:gap-4 xs:gap-2'>
-                                                                    <p className='lg:text-2xl xs:text-xl font-bold'>
-                                                                        {c.title}
-                                                                    </p>
-                                                                    <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>
-                                                                        {c.desc}
-                                                                    </p>
+                                                                    <p className='lg:text-2xl xs:text-xl font-bold'>{c.title}</p>
+                                                                    <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>{c.desc}</p>
                                                                 </div>
                                                                 <div className='lg:w-1/6 xs:w-full'>
                                                                     <a
@@ -280,10 +254,7 @@ export const LayoutInstructions = () => {
                                                                         href={c.doc}
                                                                         target='_blank'
                                                                     >
-                                                                        Скачать{' '}
-                                                                        <FaLongArrowAltRight
-                                                                            size={18}
-                                                                        />
+                                                                        Скачать <FaLongArrowAltRight size={18} />
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -295,28 +266,16 @@ export const LayoutInstructions = () => {
                                     ))}
                                 {TriumfDomen.pathname == '/instructions-court' &&
                                     InstructionsCourtContent.map((i) => (
-                                        <div
-                                            className='lg:glass w-full h-full rounded-md lg:p-8 xs:p-4 xs:shadow'
-                                            key={i.id}
-                                        >
+                                        <div className='lg:glass w-full h-full rounded-md lg:p-8 xs:p-4 xs:shadow' key={i.id}>
                                             <div className='flex flex-col lg:gap-16 xs:gap-8'>
                                                 <div className='flex flex-col lg:gap-8 xs:gap-4'>
-                                                    <h1 className='lg:text-3xl xs:text-2xl font-bold'>
-                                                        {i.title}
-                                                    </h1>
+                                                    <h1 className='lg:text-3xl xs:text-2xl font-bold'>{i.title}</h1>
                                                     <div className='w-full flex flex-col lg:gap-8 xs:gap-4'>
                                                         {i.content?.map((c) => (
-                                                            <div
-                                                                className='w-full flex xs:flex-col lg:flex-row items-center lg:gap-8 xs:gap-4'
-                                                                key={c.id}
-                                                            >
+                                                            <div className='w-full flex xs:flex-col lg:flex-row items-center lg:gap-8 xs:gap-4' key={c.id}>
                                                                 <div className='lg:w-5/6 xs:w-full flex flex-col lg:gap-4 xs:gap-2'>
-                                                                    <p className='lg:text-2xl xs:text-xl font-bold'>
-                                                                        {c.title}
-                                                                    </p>
-                                                                    <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>
-                                                                        {c.desc}
-                                                                    </p>
+                                                                    <p className='lg:text-2xl xs:text-xl font-bold'>{c.title}</p>
+                                                                    <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>{c.desc}</p>
                                                                 </div>
                                                                 <div className='lg:w-1/6 xs:w-full'>
                                                                     <a
@@ -324,10 +283,7 @@ export const LayoutInstructions = () => {
                                                                         href={c.doc}
                                                                         target='_blank'
                                                                     >
-                                                                        Скачать{' '}
-                                                                        <FaLongArrowAltRight
-                                                                            size={18}
-                                                                        />
+                                                                        Скачать <FaLongArrowAltRight size={18} />
                                                                     </a>
                                                                 </div>
                                                             </div>

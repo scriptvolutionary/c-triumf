@@ -5,8 +5,6 @@ function Extra() {
 }
 
 Extra.pageTitle = 'Опции (доп. проверки)'
-Extra.pageKeywords = 'Ключи'
 Extra.pageDescription = 'Описание'
-Extra.pageType = 'website'
 
 export default Extra

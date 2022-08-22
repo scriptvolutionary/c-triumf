@@ -6,6 +6,5 @@ function OfferPerson() {
 
 OfferPerson.pageTitle = 'Публичная оферта для физ. и юр. лиц'
 OfferPerson.pageDescription = 'Описание'
-OfferPerson.pageType = 'website'
 
 export default OfferPerson

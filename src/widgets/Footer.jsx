@@ -107,11 +107,7 @@ export const Footer = () => {
                                 <a
                                     className='cursor-pointer w-full flex items-center lg:text-base gap-2 font-medium lg:hover:text-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 ease-in-out transition-all'
                                     href={l.path}
-                                    target={
-                                        l.path !==
-                                            ('mailto:test@c-triumf.ru' || 'tel:+79067772503') &&
-                                        '_blank'
-                                    }
+                                    target={l.path !== ('mailto:test@c-triumf.ru' || 'tel:+79067772503') && '_blank'}
                                 >
                                     {l.icon}
                                     <span>{l.title}</span>

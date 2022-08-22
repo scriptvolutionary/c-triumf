@@ -175,10 +175,7 @@ function Sitemap() {
                         <div className='flex flex-col lg:gap-16 xs:gap-8'>
                             <div className='w-full flex lg:flex-row xs:flex-col items-center lg:text-start xs:text-center lg:justify-between xs:justify-center lg:gap-16 xs:gap-8'>
                                 <h2 className='lg:text-4xl xs:text-3xl font-bold'>Карта сайта</h2>
-                                <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>
-                                    Находите необходимые Вам страницы прямо на сайте, а не в
-                                    браузерной строке :)
-                                </p>
+                                <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>Находите необходимые Вам страницы прямо на сайте, а не в браузерной строке :)</p>
                             </div>
                             <div className='grid grid-cols-4 lg:gap-8 xs:gap-4'>
                                 {SitemapContent.map(
@@ -186,9 +183,7 @@ function Sitemap() {
                                         m.content && (
                                             <div className='glass rounded-md p-8'>
                                                 <div className='flex flex-col gap-8'>
-                                                    <h3 className='text-3xl font-bold text-secondary'>
-                                                        {m.word}
-                                                    </h3>
+                                                    <h3 className='text-3xl font-bold text-secondary'>{m.word}</h3>
                                                     {m.content ? (
                                                         <ul className='list-inside'>
                                                             {m.content.map((c) => (
@@ -203,9 +198,7 @@ function Sitemap() {
                                                             ))}
                                                         </ul>
                                                     ) : (
-                                                        <p className='text-xl text-neutral/75 font-medium'>
-                                                            Страниц нет.
-                                                        </p>
+                                                        <p className='text-xl text-neutral/75 font-medium'>Страниц нет.</p>
                                                     )}
                                                 </div>
                                             </div>
@@ -221,8 +214,6 @@ function Sitemap() {
 }
 
 Sitemap.pageTitle = 'Карта сайта'
-Sitemap.keywords = 'Ключи'
 Sitemap.pageDescription = 'Описание'
-Sitemap.pageType = 'website'
 
 export default Sitemap
