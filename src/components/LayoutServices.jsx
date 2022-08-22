@@ -17,7 +17,7 @@ export const LayoutServices = () => {
     const BasicServicesLinks = [
         {
             id: 0,
-            title: 'Расследование. По факту хищения или другое',
+            title: 'Расследование (по факту хищения и т.п.)',
             path: 'basic/investigation'
         },
         {

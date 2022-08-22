@@ -21,7 +21,7 @@ export const LayoutPrices = () => {
         {
             id: 0,
             serviceId: 'investigation',
-            title: 'Расследование. По факту хищения или другое',
+            title: 'Расследование (по факту хищения и т.п.)',
             path: '/price-basic#investigation',
             servicePath: '/basic/investigation',
             priceContent: [
@@ -387,14 +387,14 @@ export const LayoutPrices = () => {
                                             BasicServicesLinks.map((l) => (
                                                 <div className='w-full rounded-md glass lg:p-8 xs:p-4' id={l.serviceId} key={l.id}>
                                                     <div className='flex flex-col lg:gap-4 xs:gap-4'>
-                                                        <div className='flex xs:flex-col lg:flex-row lg:items-center xs:gap-2 justify-between'>
+                                                        <div className='flex xs:flex-col lg:flex-row lg:items-center xs:gap-4 justify-between'>
                                                             <h2 className='flex items-center gap-2 lg:text-end font-semibold lg:text-2xl xs:text-lg'>
                                                                 {l.title}
                                                                 {l.servicePath && (
                                                                     <span className='tooltip' data-tip='Подробнее'>
                                                                         <Link href={l.servicePath}>
                                                                             <a>
-                                                                                <FaQuestionCircle className='text-secondary' size={20} />
+                                                                                <FaQuestionCircle className='text-secondary' size={24} />
                                                                             </a>
                                                                         </Link>
                                                                     </span>

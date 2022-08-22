@@ -5,7 +5,10 @@ export default function Document() {
         <Html lang='ru'>
             <Head>
                 <meta name='robots' content='index, follow' />
-                <meta name='keywords' content='' />
+                <meta
+                    name='keywords'
+                    content='проверка на полиграфе, проверка на детекторе лжи, полиграфолог, полиграф при приеме на работу, проверка при приеме на работу проверка на полиграфе в москве, полиграф москва, пройти полиграф, полиграф проверка, услуги полиграфа, полиграф в суде, полиграф, полиграфолог'
+                />
 
                 <meta property='og:image' content='/logo.svg' />
                 <meta property='og:image:width' content='512' />
@@ -24,7 +27,7 @@ export default function Document() {
                 <link rel='icon' href='/icon.svg' size='all' />
 
                 <link rel='preconnect' href='https://fonts.googleapis.com' />
-                <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+                <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='true' />
                 <link href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap' rel='stylesheet' />
             </Head>
             <body>

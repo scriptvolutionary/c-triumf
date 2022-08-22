@@ -9,13 +9,13 @@ export const Banner = () => {
                 <section className='xs:hidden 2xl:block w-full h-full'>
                     <figure className='fixed lg:-top-44 left-0 w-full xs:w-full h-full -z-10'>
                         <video className='w-full' autoPlay loop>
-                            <source src='/cloud.mp4' type='video/mp4' />
+                            <source src='/cloud.mp' type='video/mp4' />
                         </video>
                     </figure>
                 </section>
             ) : (
                 <section className='w-screen h-full'>
-                    <div className='card lg:h-[840px] w-full image-full rounded-none -z-10'>
+                    <div className='card lg:h-[720px] w-full image-full rounded-none -z-10'>
                         <figure>
                             <video className='xs:hidden lg:block absolute w-full' autoPlay loop>
                                 <source src='https://assets.website-files.com/5c6d317b07ffea21a7d539d9/5c6d4b9eaf4da332e4be8fd1_video-clouds-transcode.mp4' type='video/mp4' />

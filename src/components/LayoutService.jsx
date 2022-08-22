@@ -2,12 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import {
-    FaLongArrowAltLeft,
-    FaLongArrowAltRight,
-    FaRubleSign,
-    FaShoppingCart
-} from 'react-icons/fa'
+import { FaLongArrowAltLeft, FaLongArrowAltRight, FaRubleSign, FaShoppingCart } from 'react-icons/fa'
 
 export const LayoutService = ({ children }) => {
     const TriumfDomen = useRouter()
@@ -451,17 +446,8 @@ export const LayoutService = ({ children }) => {
     return (
         <>
             <Head>
-                <link
-                    rel='stylesheet'
-                    type='text/css'
-                    charSet='UTF-8'
-                    href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
-                />
-                <link
-                    rel='stylesheet'
-                    type='text/css'
-                    href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
-                />
+                <link rel='stylesheet' type='text/css' charSet='UTF-8' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css' />
+                <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css' />
             </Head>
             <section className='w-screen h-full'>
                 <div className='max-w-7xl mx-auto px-4'>
@@ -514,23 +500,15 @@ export const LayoutService = ({ children }) => {
                         <div className='flex flex-col lg:gap-16 xs:gap-8'>
                             <div className='flex flex-col'>
                                 <h1 className='lg:text-4xl xs:text-3xl font-bold'>{TitleCheck}</h1>
-                                <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>
-                                    {SubTitleCheck}
-                                </p>
+                                <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>{SubTitleCheck}</p>
                             </div>
                             <div className='glass w-full h-full rounded-md xs:p-4 lg:p-8'>
                                 <div className='mb-16 xs:mb-8'>
                                     <div className='flex flex-col xs:gap-8 gap-16'>
                                         <div className='flex flex-col'>
-                                            <h1 className='lg:text-3xl xs:text-2xl font-semibold'>
-                                                {SubTitleCheck}
-                                            </h1>
+                                            <h1 className='lg:text-3xl xs:text-2xl font-semibold'>{SubTitleCheck}</h1>
                                             <p className='lg:text-lg xs:text-base uppercase text-neutral/75 font-semibold flex items-center gap-1'>
-                                                От{' '}
-                                                <span className='underline underline-offset-2'>
-                                                    {PriceTitleCheck}
-                                                </span>{' '}
-                                                <FaRubleSign size={14} />
+                                                От <span className='underline underline-offset-2'>{PriceTitleCheck}</span> <FaRubleSign size={14} />
                                             </p>
                                         </div>
                                         <div className='flex flex-col gap-8'>{children}</div>
@@ -580,13 +558,10 @@ export const LayoutService = ({ children }) => {
                 <div className='max-w-7xl mx-auto px-4'>
                     <div className='lg:pb-24 xs:pb-12'>
                         <div className='flex flex-col items-center xs:p-8 lg:p-16 glass rounded-md xs:gap-8 lg:gap-16'>
-                            <h2 className='lg:text-4xl xs:text-3xl font-bold xs:text-center'>
-                                Появился вопрос по услуге?
-                            </h2>
+                            <h2 className='lg:text-4xl xs:text-3xl font-bold xs:text-center'>Появился вопрос по услуге?</h2>
                             <Link href='/contacts'>
-                                <a className='btn btn-secondary lg:btn-lg lg:glass bg-secondary hover:btn-secondary lg:text-base lg:font-semibold rounded-md gap-4 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
-                                    Обратная связь{' '}
-                                    <FaLongArrowAltRight className='lg:block xs:hidden' size={18} />
+                                <a className='btn btn-secondary lg:btn-lg lg:glass bg-secondary lg:bg-secondary hover:btn-secondary lg:text-base lg:font-semibold rounded-md gap-4 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
+                                    Обратная связь <FaLongArrowAltRight className='lg:block xs:hidden' size={18} />
                                 </a>
                             </Link>
                         </div>
