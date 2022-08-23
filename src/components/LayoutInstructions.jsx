@@ -248,15 +248,17 @@ export const LayoutInstructions = () => {
                                                                     <p className='lg:text-2xl xs:text-xl font-bold'>{c.title}</p>
                                                                     <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>{c.desc}</p>
                                                                 </div>
-                                                                <div className='lg:w-1/6 xs:w-full'>
-                                                                    <a
-                                                                        className='btn btn-secondary btn-block lg:text-base lg:font-semibold justify-between lg:bg-secondary bg-secondary hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md lg:glass'
-                                                                        href={c.doc}
-                                                                        target='_blank'
-                                                                    >
-                                                                        Скачать <FaLongArrowAltRight size={18} />
-                                                                    </a>
-                                                                </div>
+                                                                {c.doc && (
+                                                                    <div className='lg:w-1/6 xs:w-full'>
+                                                                        <a
+                                                                            className='btn btn-secondary btn-block lg:text-base lg:font-semibold justify-between lg:bg-secondary bg-secondary hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md lg:glass'
+                                                                            href={c.doc}
+                                                                            target='_blank'
+                                                                        >
+                                                                            Скачать <FaLongArrowAltRight size={18} />
+                                                                        </a>
+                                                                    </div>
+                                                                )}
                                                             </div>
                                                         ))}
                                                     </div>
@@ -277,15 +279,17 @@ export const LayoutInstructions = () => {
                                                                     <p className='lg:text-2xl xs:text-xl font-bold'>{c.title}</p>
                                                                     <p className='lg:text-lg xs:text-base font-medium text-neutral/75'>{c.desc}</p>
                                                                 </div>
-                                                                <div className='lg:w-1/6 xs:w-full'>
-                                                                    <a
-                                                                        className='btn btn-secondary btn-block lg:text-base lg:font-semibold justify-between lg:bg-secondary bg-secondary hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md lg:glass'
-                                                                        href={c.doc}
-                                                                        target='_blank'
-                                                                    >
-                                                                        Скачать <FaLongArrowAltRight size={18} />
-                                                                    </a>
-                                                                </div>
+                                                                {c.doc && (
+                                                                    <div className='lg:w-1/6 xs:w-full'>
+                                                                        <a
+                                                                            className='btn btn-secondary btn-block lg:text-base lg:font-semibold justify-between lg:bg-secondary bg-secondary hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 rounded-md lg:glass'
+                                                                            href={c.doc}
+                                                                            target='_blank'
+                                                                        >
+                                                                            Скачать <FaLongArrowAltRight size={18} />
+                                                                        </a>
+                                                                    </div>
+                                                                )}
                                                             </div>
                                                         ))}
                                                     </div>

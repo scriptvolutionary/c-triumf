@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-import { useLocalStorage } from '../shared/hooks/useLocalStorage'
-
-import { Agreement } from '../widgets/Agreement'
 import { Banner } from '../widgets/Banner'
 import { Footer } from '../widgets/Footer'
 import { Frame } from '../widgets/Frame'
@@ -11,8 +8,6 @@ import { Header } from '../widgets/Header'
 
 export const Layout = ({ pageTitle, pageDescription, pageType, children }) => {
     const TriumfDomen = useRouter()
-
-    const [agreement, setAgreement] = useLocalStorage('agreement', false)
 
     return (
         <>
@@ -30,7 +25,6 @@ export const Layout = ({ pageTitle, pageDescription, pageType, children }) => {
                 <Banner />
                 {children}
                 <Frame />
-                {!agreement && <Agreement />}
             </main>
             <Footer />
         </>

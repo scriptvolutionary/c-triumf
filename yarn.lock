@@ -317,6 +317,13 @@ daisyui@^2.24.0:
     postcss-js "^4.0.0"
     tailwindcss "^3"
 
+debug@^4.0.0:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
+  dependencies:
+    ms "2.1.2"
+
 defined@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693"
@@ -412,7 +419,7 @@ framesync@6.1.1:
   dependencies:
     tslib "^2.3.1"
 
-fsevents@~2.3.2:
+fsevents@^2.3.2, fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
@@ -531,6 +538,11 @@ minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
+ms@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
+  integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
 nanoid@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
@@ -548,6 +560,14 @@ next-sitemap@^3.1.21:
   dependencies:
     "@corex/deepmerge" "^4.0.29"
     minimist "^1.2.6"
+
+next-ym@^2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/next-ym/-/next-ym-2.3.5.tgz#329d5bf707e8bee39169fbc58b4c7127007f1cdb"
+  integrity sha512-wkZE5BqvvCbdoDE3B1qMY5M3ja/o0viBagXHiht+ujhijzr8JEoxenE7Snpd/nFcj8Jd2FH0T2Hs2P5pmycfEg==
+  dependencies:
+    debug "^4.0.0"
+    react-ym "^0.0.7"
 
 next@12.2.5:
   version "12.2.5"
@@ -574,6 +594,13 @@ next@12.2.5:
     "@next/swc-win32-arm64-msvc" "12.2.5"
     "@next/swc-win32-ia32-msvc" "12.2.5"
     "@next/swc-win32-x64-msvc" "12.2.5"
+
+nextjs-google-analytics@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/nextjs-google-analytics/-/nextjs-google-analytics-2.1.0.tgz#e84acb808fa4468411b99aca3325cc349b697ff3"
+  integrity sha512-7hwLwN9sxNlGEeyzJQe/TL8gy72TBwK9U7M1k3eGXbG4hi+FJkNCg9zOHOlBaYxCPFOLEUWN8aeBPOMj+WnGpA==
+  optionalDependencies:
+    fsevents "^2.3.2"
 
 node-releases@^2.0.6:
   version "2.0.6"
@@ -720,6 +747,11 @@ react-slick@^0.29.0:
     json2mq "^0.2.0"
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
+
+react-ym@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/react-ym/-/react-ym-0.0.7.tgz#496c9ea5f6644b40bc264b38d72d6501a9687e93"
+  integrity sha512-K15COS5d+iPtwGPGSJ3KbFFrKD0hQMO2mHltvionEjNjRs51FZnykp9GCtseSSHyo1mTqATLmDjAVIjjB3pXOw==
 
 react@18.2.0:
   version "18.2.0"

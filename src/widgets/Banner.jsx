@@ -9,7 +9,7 @@ export const Banner = () => {
                 <section className='xs:hidden 2xl:block w-full h-full'>
                     <figure className='fixed lg:-top-44 left-0 w-full xs:w-full h-full -z-10'>
                         <video className='w-full' autoPlay loop>
-                            <source src='/cloud.mp' type='video/mp4' />
+                            <source src='/cloud.mp4' type='video/mp4' />
                         </video>
                     </figure>
                 </section>
@@ -28,6 +28,9 @@ export const Banner = () => {
                                     <p className='lg:text-xl xs:text-sm text-neutral/75 text-justify font-semibold'>
                                         Благодарю за обращение в Экспертный центр Триумф. Я гарантирую независимую проверку на полиграфе за разумную цену. Также здесь есть полиграфологи разных
                                         категорий на м. Академическая и м. Белорусская в 5 мин. от метро.
+                                    </p>
+                                    <p className='lg:text-xl xs:text-sm text-neutral/75 text-justify font-semibold'>
+                                        Если Вы ищите, где получить заведомо ложное заключение – Вам следует обращаться не к нам!
                                     </p>
                                 </div>
                             </div>
