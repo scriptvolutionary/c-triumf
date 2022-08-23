@@ -95,9 +95,9 @@ export const Header = () => {
     return (
         <header className='sticky text-base-content top-0 w-screen h-full ease-in-out-transition-all z-20'>
             <div className='max-w-7xl mx-auto px-4'>
-                <div className='flex items-center justify-between gap-16 py-4'>
+                <div className='flex items-center justify-between gap-16 lg:py-4 xs:py-2'>
                     <Link href='/'>
-                        <img className='cursor-pointer active:scale-95 hover:opacity-90 w-24 h-full ease-in-out transition-all transform-gpu' src='/logo.svg' />
+                        <img className='cursor-pointer active:scale-95 hover:opacity-90 lg:w-24 xs:w-16 h-full ease-in-out transition-all transform-gpu' src='/logo.svg' />
                     </Link>
                     <div className='xs:hidden lg:flex items-center justify-between w-full'>
                         {HeaderLinks.map((l) => (

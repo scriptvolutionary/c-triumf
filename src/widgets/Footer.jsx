@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { FaEnvelope, FaMap, FaPhone, FaTelegramPlane, FaWhatsapp } from 'react-icons/fa'
+import { FaEnvelope, FaPhone, FaTelegramPlane, FaWhatsapp } from 'react-icons/fa'
 
 export const Footer = () => {
     const FooterLinks = [
@@ -67,7 +67,7 @@ export const Footer = () => {
         },
         {
             id: 2,
-            title: 'alfeeva@c-triumf.ru',
+            title: 'test@c-triumf.ru',
             icon: <FaEnvelope size={18} />,
             path: 'mailto:test@c-triumf.ru'
         },
@@ -124,7 +124,7 @@ export const Footer = () => {
                             <p>© ООО НЭЦ «Триумф» 2007-2022</p>
                             <p>© АНО СЭЦ «Триумф» 2011-2022</p>
                         </div>
-                        <div className='md:place-self-center md:justify-self-end'>
+                        {/* <div className='md:place-self-center md:justify-self-end'>
                             <div className='grid grid-flow-col gap-4'>
                                 <Link href='/sitemap'>
                                     <a className='w-full lg:text-base font-medium xs:active:text-secondary lg:hover:text-secondary lg:hover:translate-x-1 lg:hover:-translate-y-1 ease-in-out transition-all transform-gpu flex gap-2 items-center'>
@@ -133,7 +133,7 @@ export const Footer = () => {
                                     </a>
                                 </Link>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -227,7 +227,7 @@ function Home() {
                 <div className='max-w-7xl mx-auto px-4'>
                     <div className='lg:pb-24 xs:pb-12'>
                         <div className='flex flex-col lg:gap-16 xs:gap-8'>
-                            <div className='w-full flex flex-col items-center justify-between xs:gap-8 gap-16'>
+                            <div className='w-full flex flex-col items-center xs:text-center justify-between xs:gap-8 gap-16'>
                                 <h2 className='lg:text-4xl xs:text-3xl font-bold'>Почему стоит выбрать Триумф?</h2>
                                 <p className='lg:text-lg font-medium text-neutral/75 lg:w-5/6 text-center'>
                                     Ключевое. За все проверки экспертов есть ответственное лицо- основатель Триумфа Татьяна Алфеева. В случае вопросов есть христинская позиция быть на стороне Истины,

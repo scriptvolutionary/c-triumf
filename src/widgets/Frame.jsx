@@ -5,32 +5,32 @@ export const Frame = () => {
         {
             id: 0,
             title: 'Telegram',
-            icon: <FaTelegramPlane className='xs:w-6 xs:h-6 lg:w-7 lg:h-7' />,
+            icon: <FaTelegramPlane className='xs:w-5 xs:h-5 lg:w-6 lg:h-6' />,
             path: 'https://t.me/Alfeeva1'
         },
         {
             id: 1,
             title: 'WhatsApp',
-            icon: <FaWhatsapp className='xs:w-6 xs:h-6 lg:w-7 lg:h-7' />,
+            icon: <FaWhatsapp className='xs:w-5 xs:h-5 lg:w-6 lg:h-6' />,
             path: 'https://wa.me/+79067772503'
         },
         {
             id: 2,
             title: 'Написать',
-            icon: <FaEnvelope className='xs:w-6 xs:h-6 lg:w-7 lg:h-7' />,
+            icon: <FaEnvelope className='xs:w-5 xs:h-5 lg:w-6 lg:h-6' />,
             path: 'mailto:test@c-triumf.ru'
         },
         {
             id: 3,
             title: 'Позвонить',
-            icon: <FaPhone className='xs:w-6 xs:h-6 lg:w-7 lg:h-7' />,
+            icon: <FaPhone className='xs:w-5 xs:h-5 lg:w-6 lg:h-6' />,
             path: 'tel:+79067772503'
         }
     ]
 
     return (
-        <div className='fixed h-screen z-10 top-0 right-0'>
-            <div className='h-full flex items-center lg:pr-4 xs:mr-2'>
+        <div className='fixed h-screen z-10 top-0 right-0 xs:pr-2 lg:pr-4'>
+            <div className='h-full flex items-center'>
                 <ul className='menu xs:bg-base-100 xs:shadow lg:glass rounded-md'>
                     {FrameLinks.map((l) => (
                         <li className='tooltip tooltip-left' data-tip={l.title} key={l.id}>
