@@ -149,8 +149,8 @@ export const LayoutServices = () => {
                                     <a
                                         className={
                                             TriumfDomen.pathname == s.path
-                                                ? 'w-full lg:glass btn btn-secondary lg:bg-secondary bg-secondary hover:btn-secondary xs:h-24 lg:h-44 lg:text-base lg:font-semibold rounded-md flex flex-col gap-2'
-                                                : 'w-full lg:glass xs:shadow btn btn-ghost h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary xs:h-24 lg:h-44 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'
+                                                ? 'w-full lg:glass btn btn-secondary lg:bg-secondary bg-secondary hover:btn-secondary xs:h-24 lg:h-36 lg:text-base lg:font-semibold rounded-md flex flex-col gap-2'
+                                                : 'w-full lg:glass xs:shadow btn btn-ghost h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary xs:h-24 lg:h-36 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'
                                         }
                                     >
                                         <span>{s.title}</span>
@@ -174,7 +174,7 @@ export const LayoutServices = () => {
                                 {TriumfDomen.pathname == '/basic' &&
                                     BasicServicesLinks.map((b) => (
                                         <Link href={b.path} key={b.id}>
-                                            <a className='w-full btn btn-ghost xs:h-24 lg:h-36 lg:text-base lg:font-semibold lg:glass xs:shadow rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
+                                            <a className='w-full btn btn-ghost xs:h-24 lg:text-base lg:font-semibold lg:glass xs:shadow rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
                                                 {b.title}
                                             </a>
                                         </Link>
@@ -182,7 +182,7 @@ export const LayoutServices = () => {
                                 {TriumfDomen.pathname == '/other' &&
                                     OtherServicesLinks.map((o) => (
                                         <Link href={o.path} key={o.id}>
-                                            <a className='w-full btn btn-ghost xs:h-24 lg:h-36 lg:text-base lg:font-semibold lg:glass xs:shadow rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
+                                            <a className='w-full btn btn-ghost xs:h-24 lg:text-base lg:font-semibold lg:glass xs:shadow rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
                                                 {o.title}
                                             </a>
                                         </Link>
@@ -190,7 +190,7 @@ export const LayoutServices = () => {
                                 {TriumfDomen.pathname == '/extra' &&
                                     ExtraServicesLinks.map((e) => (
                                         <Link href={e.path} key={e.id}>
-                                            <a className='w-full btn btn-ghost xs:h-24 lg:h-36 lg:text-base lg:font-semibold lg:glass xs:shadow rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
+                                            <a className='w-full btn btn-ghost xs:h-24 lg:text-base lg:font-semibold lg:glass xs:shadow rounded-md hover:btn-secondary lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu'>
                                                 {e.title}
                                             </a>
                                         </Link>

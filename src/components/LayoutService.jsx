@@ -475,17 +475,17 @@ export const LayoutService = ({ children }) => {
                     <div className='lg:pb-24 xs:pb-12'>
                         <div className='grid lg:grid-cols-3 lg:gap-8 xs:gap-4'>
                             <Link href={PreviousLinkCheck}>
-                                <a className='w-full lg:glass xs:shadow btn btn-ghost h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary xs:h-24 lg:h-44 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu xs:gap-2 lg:gap-4'>
+                                <a className='w-full lg:glass xs:shadow btn btn-ghost h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary xs:h-24 lg:h-36 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu xs:gap-2 lg:gap-4'>
                                     <FaLongArrowAltLeft size={24} />
                                     {PreviousTitleCheck}
                                 </a>
                             </Link>
-                            <button className='w-full lg:glass btn btn-secondary lg:bg-secondary bg-secondary hover:btn-secondary xs:h-24 lg:h-44 lg:text-base lg:font-semibold rounded-md flex flex-col gap-2'>
+                            <button className='w-full lg:glass btn btn-secondary lg:bg-secondary bg-secondary hover:btn-secondary xs:h-24 lg:h-36 lg:text-base lg:font-semibold rounded-md flex flex-col gap-2'>
                                 <span>{SubTitleCheck}</span>
                                 <span className='w-2/3 h-1 bg-secondary-content'></span>
                             </button>
                             <Link href={NextLinkCheck}>
-                                <a className='w-full lg:glass xs:shadow btn btn-ghost h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary xs:h-24 lg:h-44 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu xs:gap-2 lg:gap-4'>
+                                <a className='w-full lg:glass xs:shadow btn btn-ghost h-44 lg:text-base lg:font-semibold rounded-md hover:btn-secondary xs:h-24 lg:h-36 lg:hover:shadow-xl lg:hover:translate-x-1 lg:hover:-translate-y-1 transform-gpu xs:gap-2 lg:gap-4'>
                                     {NextTitleCheck}
                                     <FaLongArrowAltRight size={24} />
                                 </a>

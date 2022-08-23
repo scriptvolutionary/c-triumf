@@ -111,7 +111,7 @@ export const Header = () => {
                                     </a>
                                 </Link>
                                 {l.content && (
-                                    <ul className='dropdown-content glass-default mt-2 w-80 shadow-md rounded-md' tabIndex={0}>
+                                    <ul className='dropdown-content glass-default w-80 shadow-md rounded-md' tabIndex={0}>
                                         {l.content.map((c) => (
                                             <Link href={c.path} key={c.id}>
                                                 <a className='btn btn-ghost btn-block justify-start normal-case text-base font-semibold glass-default shadow-none hover:btn-secondary hover:shadow-xl hover:-translate-y-1 hover:translate-x-1 rounded-md transform-gpu'>
